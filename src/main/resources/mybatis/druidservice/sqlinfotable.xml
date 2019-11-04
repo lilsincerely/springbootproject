@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.duiba.sp.dao.AppDao">
+
+    <select id="selectApp" resultType="com.duiba.sp.entity.AppEntity">
+        SELECT
+        app_id AS id,
+        slot_name AS appNames
+        FROM tb_slot
+    </select>
+
+</mapper>
